@@ -1,0 +1,17 @@
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Infrastructure.deps.json
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Infrastructure.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Infrastructure.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Application.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Domain.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Domain.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\bin\Debug\net7.0\FinanceTracker.Application.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.AssemblyInfo.cs
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.csproj.CopyComplete
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\refint\FinanceTracker.Infrastructure.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\FinanceTracker.Infrastructure.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Infrastructure\obj\Debug\net7.0\ref\FinanceTracker.Infrastructure.dll

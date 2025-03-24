@@ -1,0 +1,15 @@
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\bin\Debug\net7.0\FinanceTracker.Application.deps.json
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\bin\Debug\net7.0\FinanceTracker.Application.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\bin\Debug\net7.0\FinanceTracker.Application.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\bin\Debug\net7.0\FinanceTracker.Domain.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\bin\Debug\net7.0\FinanceTracker.Domain.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.csproj.AssemblyReference.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.AssemblyInfoInputs.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.AssemblyInfo.cs
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.csproj.CopyComplete
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\refint\FinanceTracker.Application.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\FinanceTracker.Application.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Application\obj\Debug\net7.0\ref\FinanceTracker.Application.dll

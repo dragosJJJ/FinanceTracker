@@ -1,0 +1,12 @@
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\bin\Debug\net7.0\FinanceTracker.Domain.deps.json
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\bin\Debug\net7.0\FinanceTracker.Domain.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\bin\Debug\net7.0\FinanceTracker.Domain.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.csproj.AssemblyReference.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.AssemblyInfoInputs.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.AssemblyInfo.cs
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\refint\FinanceTracker.Domain.dll
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.pdb
+C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\ref\FinanceTracker.Domain.dll

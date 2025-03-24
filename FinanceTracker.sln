@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3AE1E094-CA27-4482-8A8D-D41577AA2250}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceTracker.Domain", "src\FinanceTracker.Domain\FinanceTracker.Domain.csproj", "{38E1A8EC-4239-44EF-A02D-DC8CFCDE4A22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceTracker.Application", "src\FinanceTracker.Application\FinanceTracker.Application.csproj", "{82D339BD-7EDD-4A93-81B3-8688920B5CD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceTracker.Infrastructure", "src\FinanceTracker.Infrastructure\FinanceTracker.Infrastructure.csproj", "{027926E5-6883-413E-8053-D67D79D50E34}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceTracker.API", "src\FinanceTracker.API\FinanceTracker.API.csproj", "{AFF4B09B-0DD2-4402-B149-83AB1D97E822}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FinanceTracker.Client", "src\FinanceTracker.Client\", "{2CC411CB-51EB-4D1D-B830-4066451D1E35}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53287"
+		Debug.AspNetCompiler.PhysicalPath = "src\FinanceTracker.Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53287\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53287"
+		Release.AspNetCompiler.PhysicalPath = "src\FinanceTracker.Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53287\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53287"
+		SlnRelativePath = "src\FinanceTracker.Client\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38E1A8EC-4239-44EF-A02D-DC8CFCDE4A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E1A8EC-4239-44EF-A02D-DC8CFCDE4A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E1A8EC-4239-44EF-A02D-DC8CFCDE4A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E1A8EC-4239-44EF-A02D-DC8CFCDE4A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82D339BD-7EDD-4A93-81B3-8688920B5CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D339BD-7EDD-4A93-81B3-8688920B5CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D339BD-7EDD-4A93-81B3-8688920B5CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D339BD-7EDD-4A93-81B3-8688920B5CD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027926E5-6883-413E-8053-D67D79D50E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027926E5-6883-413E-8053-D67D79D50E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027926E5-6883-413E-8053-D67D79D50E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027926E5-6883-413E-8053-D67D79D50E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF4B09B-0DD2-4402-B149-83AB1D97E822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF4B09B-0DD2-4402-B149-83AB1D97E822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF4B09B-0DD2-4402-B149-83AB1D97E822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF4B09B-0DD2-4402-B149-83AB1D97E822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CC411CB-51EB-4D1D-B830-4066451D1E35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC411CB-51EB-4D1D-B830-4066451D1E35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CC411CB-51EB-4D1D-B830-4066451D1E35}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CC411CB-51EB-4D1D-B830-4066451D1E35}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38E1A8EC-4239-44EF-A02D-DC8CFCDE4A22} = {3AE1E094-CA27-4482-8A8D-D41577AA2250}
+		{82D339BD-7EDD-4A93-81B3-8688920B5CD9} = {3AE1E094-CA27-4482-8A8D-D41577AA2250}
+		{027926E5-6883-413E-8053-D67D79D50E34} = {3AE1E094-CA27-4482-8A8D-D41577AA2250}
+		{AFF4B09B-0DD2-4402-B149-83AB1D97E822} = {3AE1E094-CA27-4482-8A8D-D41577AA2250}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E31A38A-9BB5-46E5-8D02-539A919EC2B7}
+	EndGlobalSection
+EndGlobal
