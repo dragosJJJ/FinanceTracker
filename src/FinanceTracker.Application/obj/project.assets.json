@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net9.0": {
       "FinanceTracker.Domain/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v9.0",
         "compile": {
           "bin/placeholder/FinanceTracker.Domain.dll": {}
         },
@@ -22,44 +22,44 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net9.0": [
       "FinanceTracker.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dragos\\.nuget\\packages\\": {},
+    "C:\\Users\\zidar\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dragos\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+      "projectUniqueName": "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
       "projectName": "FinanceTracker.Application",
-      "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
-      "packagesPath": "C:\\Users\\Dragos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dragos\\FinanceTracker\\src\\FinanceTracker.Application\\obj\\",
+      "projectPath": "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+      "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Dragos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net9.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\Dragos\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
-              "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
+            "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
+              "projectPath": "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
             }
           }
         }
@@ -68,11 +68,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
         "imports": [
           "net461",
           "net462",
@@ -89,7 +95,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

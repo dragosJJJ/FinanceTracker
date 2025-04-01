@@ -10,3 +10,15 @@ C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\Financ
 C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\refint\FinanceTracker.Domain.dll
 C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.pdb
 C:\Users\Dragos\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\ref\FinanceTracker.Domain.dll
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\bin\Debug\net7.0\FinanceTracker.Domain.deps.json
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\bin\Debug\net7.0\FinanceTracker.Domain.dll
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\bin\Debug\net7.0\FinanceTracker.Domain.pdb
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.AssemblyInfoInputs.cache
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.AssemblyInfo.cs
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.csproj.CoreCompileInputs.cache
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.sourcelink.json
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.dll
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\refint\FinanceTracker.Domain.dll
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\FinanceTracker.Domain.pdb
+E:\Projects\Faculty\Year3.2\SE\FinanceTracker\src\FinanceTracker.Domain\obj\Debug\net7.0\ref\FinanceTracker.Domain.dll

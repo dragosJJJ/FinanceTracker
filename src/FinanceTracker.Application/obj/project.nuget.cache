@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/wryLv/uD4u3aFYbm1FTV+yPhQZzaWZB3ppq4p8t5tpyI4NCjLXrPqdCPnuV0uVbKLPzl8uwoMHv8OlRAuvPMw==",
+  "dgSpecHash": "q9YujNNXwX8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dragos\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+  "projectFilePath": "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

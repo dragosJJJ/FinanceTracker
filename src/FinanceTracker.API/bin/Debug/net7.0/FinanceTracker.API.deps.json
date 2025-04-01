@@ -137,12 +137,18 @@
           "FinanceTracker.Domain": "1.0.0"
         },
         "runtime": {
-          "FinanceTracker.Application.dll": {}
+          "FinanceTracker.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "FinanceTracker.Domain/1.0.0": {
         "runtime": {
-          "FinanceTracker.Domain.dll": {}
+          "FinanceTracker.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "FinanceTracker.Infrastructure/1.0.0": {
@@ -151,7 +157,10 @@
           "FinanceTracker.Domain": "1.0.0"
         },
         "runtime": {
-          "FinanceTracker.Infrastructure.dll": {}
+          "FinanceTracker.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

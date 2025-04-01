@@ -16,7 +16,10 @@
       },
       "FinanceTracker.Domain/1.0.0": {
         "runtime": {
-          "FinanceTracker.Domain.dll": {}
+          "FinanceTracker.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
