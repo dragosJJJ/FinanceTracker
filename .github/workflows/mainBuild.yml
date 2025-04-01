@@ -1,0 +1,45 @@
+name: CI Build
+
+on:
+  pull_request:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up .NET 9
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x'  
+
+      # Restore dependencies
+      - name: Restore .NET dependencies
+        run: dotnet restore
+
+      # Build .NET backend
+      - name: Build .NET project
+        run: dotnet build --configuration Release --no-restore
+
+      # Set up Node.js for Angular
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  
+
+      # Install Angular dependencies
+      - name: Install Angular dependencies
+        run: npm install
+        working-directory: src/FinanceTracker.Client  
+
+      # Build Angular project
+      - name: Build Angular
+        run: npm run build --if-present
+        working-directory: src/FinanceTracker.Client  
