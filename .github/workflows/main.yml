@@ -1,0 +1,43 @@
+name: CI Build
+on:
+  pull_request:
+    branches:
+      - main  
+jobs:
+  build-backend:
+    name: Build .NET Backend
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '9.0.x'  
+          
+      - name: Restore .NET dependencies
+        run: dotnet restore FinanceTracker.sln
+        
+      - name: Build .NET project
+        run: dotnet build --configuration Release --no-restore
+        
+  build-frontend:
+    name: Build Angular Frontend
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install Angular dependencies
+        run: npm install
+        working-directory: src/FinanceTracker.Client
+          
+      - name: Build Angular
+        run: npm run build --if-present
+        working-directory: src/FinanceTracker.Client
