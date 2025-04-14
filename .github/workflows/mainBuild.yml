@@ -20,10 +20,27 @@ jobs:
           
       - name: Restore .NET dependencies
         run: dotnet restore --ignore-failed-sources
-        
+
+      - name: Create solution filter
+        run: |
+          $content = @"
+          {
+            "solution": {
+              "path": "FinanceTracker.sln",
+              "projects": [
+                "src\\FinanceTracker.API\\FinanceTracker.API.csproj",
+                "src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+                "src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
+                "src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj"
+              ]
+            }
+          }
+          "@
+          $content | Out-File -FilePath backend.slnf -Encoding utf8
       - name: Build .NET project
-        run: dotnet build --configuration Release --no-restore /p:BuildProjectReferences=false /p:SkipInvalidConfigurations=true /p:ExcludeProjects="*FinanceTracker.Client*"
-        
+        # run: dotnet build --configuration Release --no-restore /p:BuildProjectReferences=false /p:SkipInvalidConfigurations=true /p:ExcludeProjects="*FinanceTracker.Client*"
+        # run: dotnet build --configuration Release ./src/FinanceTracker.API/FinanceTracker.API.csproj ./src/FinanceTracker.Application/FinanceTracker.Application.csproj ./src/FinanceTracker.Domain/FinanceTracker.Domain.csproj ./src/FinanceTracker.Infrastructure/FinanceTracker.Infrastructure.csproj
+        run: dotnet build backend.slnf --configuration Release --no-restore
   build-frontend:
     name: Build Angular Frontend
     runs-on: ubuntu-latest
