@@ -1,4 +1,8 @@
-﻿namespace FinanceTracker.Infrastructure.Data.Configurations
+﻿using FinanceTracker.Domain.Models.Category;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace FinanceTracker.Infrastructure.Data.Configurations
 {
     public class CategoryConfiguration : IEntityTypeConfiguration<Category>
     {
@@ -8,9 +12,9 @@
             builder.Property(c => c.Name).IsRequired().HasMaxLength(100);
 
             builder.HasData(
-                Category.CreateCategoryForSeedinf(1, "Income"),
-                Category.CreateCategoryForSeedinf(2, "Expenses"),
-                Category.CreateCategoryForSeedinf(3, "Investments")
+                Category.CreateCategoryForSeeding(1, "Income"),
+                Category.CreateCategoryForSeeding(2, "Expenses"),
+                Category.CreateCategoryForSeeding(3, "Investments")
             );
         }
     }

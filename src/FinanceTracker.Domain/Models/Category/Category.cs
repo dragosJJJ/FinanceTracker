@@ -6,9 +6,9 @@
         public string Name { get; set; }
         public ICollection<Budget.Budget> Budgets { get; set; }
         private ICollection<Transaction.Transaction> transactions;
-        public IReadOnlyCollection<Transaction.Transaction> Transactions { get => transactions; set => transactions = value; }
+        public ICollection<Transaction.Transaction> Transactions { get => transactions; set => transactions = value; }
 
-        public static CreateCategoryForSeeding(int id, string name)
+        public static Category CreateCategoryForSeeding(int id, string name)
         { 
             return new Category
             { 

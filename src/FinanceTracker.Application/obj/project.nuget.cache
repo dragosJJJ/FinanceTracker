@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "EY0SeJ/AqX/7DFafxR/sRE0IPY0/T3FrOcH5VML6icoWEst9spiRD2K63u+SbcX4OHFpCM1gXJWi6LgCso7W5g==",
+  "dgSpecHash": "Y8/8esPlyJU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.3\\microsoft.entityframeworkcore.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.3\\microsoft.entityframeworkcore.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.3\\microsoft.entityframeworkcore.analyzers.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.3\\microsoft.extensions.caching.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.3\\microsoft.extensions.caching.memory.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.3\\microsoft.extensions.dependencyinjection.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.3\\microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.logging\\9.0.3\\microsoft.extensions.logging.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.3\\microsoft.extensions.logging.abstractions.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.options\\9.0.3\\microsoft.extensions.options.9.0.3.nupkg.sha512",
+    "C:\\Users\\Dragos\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
