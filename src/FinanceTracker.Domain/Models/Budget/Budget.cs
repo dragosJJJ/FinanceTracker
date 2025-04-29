@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using FinanceTracker.Domain.Models.Category;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FinanceTracker.Domain.Models.Budget
 {
@@ -15,7 +10,6 @@ namespace FinanceTracker.Domain.Models.Budget
 
         public string UserId { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
         public decimal Limit { get; set; }
 
         public int Month { get; set; }
@@ -24,8 +18,7 @@ namespace FinanceTracker.Domain.Models.Budget
 
         public int CategoryId { get; set; }
 
-        [ForeignKey("CategoryId")]
-        public Category Category { get; set; }
+        public Category.Category Category { get; set; }
 
     }
 }
