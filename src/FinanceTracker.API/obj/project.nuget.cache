@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fgm2UNTL95c=",
+  "dgSpecHash": "9fJA908sQho=",
   "success": true,
-  "projectFilePath": "E:\\Projects\\Faculty\\Year3.2\\SE\\FinanceTracker\\src\\FinanceTracker.API\\FinanceTracker.API.csproj",
+  "projectFilePath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.API\\FinanceTracker.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zidar\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
     "C:\\Users\\zidar\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
