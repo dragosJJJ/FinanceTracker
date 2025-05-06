@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {}
+    "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
+    "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+        "projectUniqueName": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
         "projectName": "FinanceTracker.Application",
-        "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
-        "packagesPath": "C:\\Users\\Dragos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\obj\\",
+        "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
+        "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dragos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
+              "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
+                "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
               }
             }
           }
@@ -69,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
+    "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
+        "projectUniqueName": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
         "projectName": "FinanceTracker.Domain",
-        "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
-        "packagesPath": "C:\\Users\\Dragos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\obj\\",
+        "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
+        "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dragos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -140,24 +140,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {
+    "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
         "projectName": "FinanceTracker.Infrastructure",
-        "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Dragos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\obj\\",
+        "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
+        "outputPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Dragos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,11 +172,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
-                "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj"
+              "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
+                "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj"
               },
-              "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dragos\\FinanceTracker\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
+              "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
+                "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
               }
             }
           }
@@ -228,7 +228,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
