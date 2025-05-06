@@ -1,0 +1,27 @@
+<main>
+  <div class="container-fluid vh-100 align-content-center">
+    <h1 class="mt-4 mb-4">Transactions</h1>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Category</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transaction of transactions">
+            <th scope="row">{{ transaction.id }}</th>
+            <td>{{ transaction.category }}</td>
+            <td>{{ transaction.amount | currency:'USD':'symbol' }}</td>
+            <td>{{ transaction.location }}</td>
+            <td>{{ transaction.date | date:'dd MMM yyyy' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
