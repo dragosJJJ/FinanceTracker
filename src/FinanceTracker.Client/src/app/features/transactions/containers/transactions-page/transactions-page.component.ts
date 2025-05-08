@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../../../core/services/api.service';
+import { CommonModule, NgFor } from '@angular/common';
 
 interface Transaction {
   id: number;
@@ -11,6 +12,7 @@ interface Transaction {
 
 @Component({
   selector: 'app-transactions-page',
+  imports: [CommonModule],
   templateUrl: './transactions-page.component.html',
   styleUrls: ['./transactions-page.component.scss']
 })

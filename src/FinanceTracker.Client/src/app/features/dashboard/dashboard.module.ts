@@ -9,13 +9,11 @@ import { DashboardPageComponent } from './containers/dashboard-page/dashboard-pa
 import { CategoryCardComponent } from './components/category-card/category-card.component';
 
 @NgModule({
-  declarations: [
-    DashboardPageComponent,
-    CategoryCardComponent
-  ],
   imports: [
+    CategoryCardComponent,
     CommonModule,
-    DashboardRoutingModule  // Import the routing module here
+    DashboardRoutingModule,  // Import the routing module here
+    DashboardPageComponent
   ]
 })
 export class DashboardModule { }
