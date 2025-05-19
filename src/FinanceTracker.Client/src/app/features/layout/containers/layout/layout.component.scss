@@ -1,0 +1,43 @@
+.layout-body {
+  background: var(--color-light);
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  color: var(--color-gray-dark);
+  display: grid;
+  grid-template-columns: 17rem auto;
+  grid-template-rows: 4rem auto;
+  gap: 2rem;
+  transition: var(--transition);
+  user-select: none;
+}
+
+.sidebar {
+  background: var(--color-primary-light);
+  padding-top: 5rem;
+  min-height: calc(100vh - 5rem);
+  width:18rem;
+  display: flex;
+  height:100vh;
+  border-radius: var(--radius-3);
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+nav {
+  width: 100vw;
+  background: var(--color-primary);
+  display: grid;
+  place-items: center;
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.main-content {
+  margin-top: 4rem;
+  padding: 20px;
+  height: calc(100vh - 4rem);
+  width: calc(100vw - 18rem);
+}

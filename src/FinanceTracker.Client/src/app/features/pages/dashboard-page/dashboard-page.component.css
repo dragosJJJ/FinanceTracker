@@ -1,0 +1,25 @@
+.dashboard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header input[type="date"] {
+  padding: 0.5rem 2rem;
+  background: var(--color-white);
+  color: var(--color-gray-dark);
+}
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  flex: 1;
+}
+

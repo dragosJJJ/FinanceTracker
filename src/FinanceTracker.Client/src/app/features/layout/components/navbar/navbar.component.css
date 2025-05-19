@@ -1,0 +1,111 @@
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.nav__logo {
+    width: 10rem;
+    background: var(--color-white);
+    padding: 0 0.5rem;
+    border-radius: var(--radius-2);
+    box-shadow: 1px 1px 1px var(--color-white);
+}
+
+.nav__search{
+    background: var(--color-light);
+    border-radius: var(--radius-1);
+    padding: 0.5rem 1rem;
+    width: 40rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    color: var(--color-gray-light);
+}
+
+.nav__search input[type="search"]{
+    color: var(--color-dark);
+    width: 100%;
+    background: transparent;
+}
+
+.nav__container i {
+    font-size: 1.6rem;
+}
+
+.nav__profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.nav__profile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav__profile-photo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.nav__theme-btn{
+    color: var(--color-dark);
+}
+
+.nav__menu-btn {
+    display: none;
+}
+
+.nav__menu-btn i {
+    font-size: 2.6rem;
+    color: var(--color-gray-dark);
+}
+
+.nav__profile-username-dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav__profile-username {
+  font-weight: 600;
+  color: black;
+  margin-right: 0.3rem;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 120px;
+  z-index: 100;
+}
+
+.dropdown-item {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}

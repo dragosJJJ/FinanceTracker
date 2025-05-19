@@ -1,0 +1,30 @@
+<div class="container nav__container">
+  <a href="./index.html" class="nav__logo">
+    <img src="logo.png" alt="Logo" />
+  </a>
+  <div class="nav__search">
+    <i class="uil uil-search"></i>
+    <input type="search" placeholder="Search" />
+  </div>
+  <div class="nav__profile-wrapper">
+    <!-- <button class="nav__theme-btn" (click)="toggleTheme()">
+      <i class="uil" [ngClass]="isDarkTheme ? 'uil-sun' : 'uil-moon'"></i>
+    </button> -->
+    <div class="nav__profile">
+    <div class="nav__profile-photo">
+      <img src="profile-1.jpg" alt="Profile Photo" />
+    </div>
+    <div class="nav__profile-username-dropdown">
+      <span class="nav__profile-username">
+        <!-- {{ this.userName }} -->
+      </span>
+      <div *ngIf="dropdownOpen" class="dropdown-menu">
+        <!-- <button class="dropdown-item" (click)="logout()">Logout</button> -->
+      </div>
+    </div>
+    </div>
+    <button class="nav__menu-btn">
+      <i class="uil uil-bars"></i>
+    </button>
+  </div>
+</div>

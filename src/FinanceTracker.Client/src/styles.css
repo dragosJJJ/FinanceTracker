@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital, wght@0,100;0,200;0,30 0:0,400;0,500; 0,600;0,700; 0,800;0,900;1,100;1,200;1,300;1,400;1,500; 1,600;1,700;1,800;1,9 ee&display=swap');
+@import '@iconscout/unicons/css/line.css';
+:root {
+  --color-white: #fff;
+  --color-light: #f0eff5;
+  --color-gray-light: #86848c;
+  --color-gray-dark: #56555e;
+  --color-dark: #27282f;
+
+  --color-primary: rgb(34, 202, 75);         
+  --color-success: rgb(34, 202, 75);        
+  --color-danger: rgb(255, 67, 54);
+  --color-warning: rgb(234, 181, 7);
+
+  --color-purple: rgb(34, 202, 75);       
+
+  --color-primary-light: rgba(34, 202, 75, 0.2);
+  --color-success-light: rgba(34, 202, 75, 0.2);
+  --color-danger-light: rgba(255, 67, 54, 0.2);
+  --color-purple-light: rgba(34, 202, 75, 0.2);
+
+  --card-padding: 1.6rem;
+
+  --radius-1: 0.5rem;
+  --radius-2: 1rem;
+  --radius-3: 1.6rem;
+
+  --transition: all 300ms ease;
+}
+
+.dark-theme {
+  --color-white: #131316;
+  --color-light: #23232a;
+  --color-dark: #ddd;
+  --color-gray-dark: #adacb5;
+
+  --color-primary: rgb(56, 155, 80);
+  --color-primary-light: rgba(34, 202, 75, 0.2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 12px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+.container{
+    width: 96vw;
+    margin-inline: auto;
+}
+
+.page-container{
+    height:100%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--color-dark);
+}
+
+h1{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+h6{
+    font-size: 0.8rem;
+}
+
+p{
+    font-size: 0.86rem;
+}
+
+small {
+    font-size: 0.77rem;
+}
+
+.text-muted{
+    color: var(--color-gray-light);
+}
+
+.primary{
+    color: var(--color-primary);
+}
+
+.bg-primary{
+    background: var(--color-primary);
+    box-shadow: 0 0.8rem 0.8rem var(--color-primary-light);
+}
+
+.bg-primary-light{
+    background: var(--color-primary-light);
+}
+
+.danger{
+    color: var(--color-danger);
+}
+
+.bg-danger{
+    background: var(--color-danger);
+    box-shadow: 0 0.8rem 0.8rem var(--color-danger-light);
+}
+
+.bg-danger-light{
+    background: var(--color-danger-light);
+}
+
+.success{
+    color: var(--color-success);
+}
+
+.bg-success{
+    background: var(--color-success);
+    box-shadow: 0 0.8rem 0.8rem var(--color-success-light);
+}
+
+.bg-success-light{
+    background: var(--color-success-light);
+}
+
+.warning{
+    color: var(--color-warning);
+}
+
+.bg-warning{
+    background: var(--color-warning);
+    box-shadow: 0 0.8rem 0.8rem var(--color-warning-light);
+}
+
+.bg-warning-light{
+    background: var(--color-warning-light);
+}
+
+.purple{
+    color: var(--color-purple);
+}
+
+.bg-purple{
+    background: var(--color-purple);
+    box-shadow: 0 0.8rem 0.8rem var(--color-purple-light);
+}
+
+.bg-purple-light{
+    background: var(--color-purple-light);
+}
+
+.bg-dark{
+    background: var(--color-dark);
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.12);
+}
+
+button{
+    cursor: pointer;
+}
+
+.swal2-dark {
+  background-color: #1e1e2f !important;
+  color: #fff !important;
+}
+
+.swal2-dark .swal2-input {
+  background: #2c2c3e;
+  color: #fff;
+  border: 1px solid #444;
+}
+.swal2-dark {
+  background-color: #1e1e2f !important;
+  color: #fff !important;
+}
+
+.swal2-dark .swal2-title,
+.swal2-dark .swal2-content {
+  color: #fff !important;
+}
+
+
+/* Card styles from Index.cshtml */
+.card {
+  width: 225px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  border-width: 1px;
+  border-radius: 30px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.description {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+/* Button styles from Transactions.cshtml */
+button {
+  height: 100px;
+  width: 150px;
+}
+
