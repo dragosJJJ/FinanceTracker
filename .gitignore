@@ -402,3 +402,4 @@ src/FinanceTracker.Application/obj/FinanceTracker.Application.csproj.nuget.dgspe
 src/FinanceTracker.Application/obj/FinanceTracker.Application.csproj.nuget.g.props
 src/FinanceTracker.Application/obj/project.assets.json
 src/FinanceTracker.Application/obj/project.nuget.cache
+src/FinanceTracker.Client/package-lock.json
