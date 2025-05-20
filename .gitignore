@@ -398,3 +398,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+src/FinanceTracker.Application/obj/FinanceTracker.Application.csproj.nuget.dgspec.json
+src/FinanceTracker.Application/obj/FinanceTracker.Application.csproj.nuget.g.props
+src/FinanceTracker.Application/obj/project.assets.json
+src/FinanceTracker.Application/obj/project.nuget.cache

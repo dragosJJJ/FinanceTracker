@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "efxjVOprK/o=",
   "success": true,
   "projectFilePath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
@@ -16,5 +17,11 @@
     "C:\\Users\\zidar\\.nuget\\packages\\microsoft.extensions.options\\9.0.3\\microsoft.extensions.options.9.0.3.nupkg.sha512",
     "C:\\Users\\zidar\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "TR+3mPdQ6PWcImH941Be8Cd9wC5snrZbefesJUPZYzH4J7jL/bsQrrrxQvl0IzI2aHvxsqF5869+RapqZyRqMw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> main
   "logs": []
 }
