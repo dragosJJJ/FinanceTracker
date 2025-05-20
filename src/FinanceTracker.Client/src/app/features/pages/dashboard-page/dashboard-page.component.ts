@@ -5,7 +5,7 @@ import { CategoryCardComponent } from '../../components/category-card/category-c
   selector: 'app-dashboard-page',
   imports: [CategoryCardComponent],
   templateUrl: './dashboard-page.component.html',
-  styleUrl: './dashboard-page.component.scss',
+  styleUrl: './dashboard-page.component.css',
 })
 export class DashboardPageComponent {
 

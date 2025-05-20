@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'category-card',
   imports: [],
   templateUrl: './category-card.component.html',
-  styleUrl: './category-card.component.scss'
+  styleUrl: './category-card.component.css'
 })
 export class CategoryCardComponent {
 
