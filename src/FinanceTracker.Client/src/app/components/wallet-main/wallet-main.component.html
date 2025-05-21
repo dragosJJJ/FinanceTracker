@@ -1,0 +1,63 @@
+<section class="wallet">
+  <div class="wallet__balance">
+    <h1>Total Balance <i class="uil uil-eye-slash"></i></h1>
+    <h1>{{ totalBalance | number : "1.0-2" }} USD</h1>
+
+    <div class="wallet__cta">
+      <a href="#">
+        <i class="uil uil-arrow-up-right"></i>
+        <p>Send</p>
+      </a>
+      <a href="#">
+        <i class="uil uil-arrow-down-right"></i>
+        <p>Receive</p>
+      </a>
+      <a href="#">
+        <i class="uil uil-share"></i>
+        <p>Share</p>
+      </a>
+    </div>
+  </div>
+
+  <ul class="wallet__tokens">
+    <li class="wallet__token wallet__token--add">
+      <i class="uil uil-plus-circle" (click)="addCard()"></i>
+    </li>
+    <li class="wallet__token" *ngFor="let card of tokens; let i = index">
+      <div class="wallet__token-left">
+        <div class="wallet__token-image">
+          <img [src]="card.currencyLogo" [alt]="card.currency" />
+        </div>
+        <div>
+          <h4>{{ card.currency }}</h4>
+          <div>
+            <h1>{{ card.amount | number : "1.0-0" }} {{ card.currency }}</h1>
+            <h5>{{ card.expiry }}</h5>
+            <h5>{{ card.cvv }}</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="wallet__token-right">
+        <div class="wallet__token-header">
+          <h4>{{ card.holder }}</h4>
+          <div class="wallet__token-image">
+            <img
+            [src]="card.providerLogo"
+            [alt]="card.currency + ' provider'"
+            class="provider-logo"
+            />
+          </div>
+        </div>
+        <div class="wallet__token-priority">
+          <h4>Priority</h4>
+          <h1>{{ card.priority }}</h1>
+        </div>
+        <div class="wallet__token-actions">
+          <i class="uil uil-edit" (click)="editCard(i)"></i>
+          <i class="uil uil-trash" (click)="deleteCard(i)"></i>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
