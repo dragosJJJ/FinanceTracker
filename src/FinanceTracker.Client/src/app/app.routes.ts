@@ -3,6 +3,7 @@ import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.co
 import { TransactionsPageComponent } from './pages/transactions-page/transactions-page.component';
 import { CardComponent } from './components/card/card.component';
 import { LayoutComponent } from './layout/layout.component';
+import { WalletComponent } from './pages/wallet/wallet.component';
 
 
 export const routes: Routes = [
@@ -13,6 +14,7 @@ export const routes: Routes = [
     children: [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       // { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+      { path: 'wallet', component: WalletComponent },
       { path: 'dashboard', component: DashboardPageComponent },
       { path: 'payment-methods', component: CardComponent },
       { path: 'transactions', component: TransactionsPageComponent },
