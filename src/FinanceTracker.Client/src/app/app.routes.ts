@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { DashboardPageComponent } from './features/pages/dashboard-page/dashboard-page.component';
-import { TransactionsPageComponent } from './features/pages/transactions-page/transactions-page.component';
-import { CardComponent } from './features/components/card/card.component';
-import { LayoutComponent } from './features/layout/containers/layout/layout.component';
+import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { TransactionsPageComponent } from './pages/transactions-page/transactions-page.component';
+import { CardComponent } from './components/card/card.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 export const routes: Routes = [

@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "DzIPLF2YBmw=",
   "success": true,
   "projectFilePath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
@@ -90,11 +89,12 @@
     "C:\\Users\\zidar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\zidar\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "z4g9edP2vJ55EixpC5ARByknKm2ULl+GPVd0QfApWl60RGhnpc29pUZ2k9AINaFGvyxgCMiMVO+Cx5t5mgdkbw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
-  "expectedPackageFiles": [],
->>>>>>> main
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

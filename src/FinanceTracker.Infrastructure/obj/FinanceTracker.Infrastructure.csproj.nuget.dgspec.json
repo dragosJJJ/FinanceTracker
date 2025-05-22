@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {}
   },
   "projects": {
@@ -13,29 +12,12 @@
         "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
         "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\obj\\",
-=======
-    "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
-        "projectName": "FinanceTracker.Application",
-        "projectPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj",
-        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\obj\\",
->>>>>>> main
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> main
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,13 +32,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
                 "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
-=======
-              "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
->>>>>>> main
               }
             }
           }
@@ -70,7 +47,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -86,7 +64,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< HEAD
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -104,30 +81,12 @@
         "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
         "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\obj\\",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
-        "projectName": "FinanceTracker.Domain",
-        "projectPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj",
-        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\obj\\",
->>>>>>> main
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> main
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -153,11 +112,18 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -169,7 +135,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< HEAD
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -187,30 +152,12 @@
         "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\zidar\\.nuget\\packages\\",
         "outputPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\obj\\",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
-        "projectName": "FinanceTracker.Infrastructure",
-        "projectPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\FinanceTracker.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\drago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Infrastructure\\obj\\",
->>>>>>> main
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "F:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\zidar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\drago\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> main
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -225,19 +172,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
                 "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj"
               },
               "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
                 "projectPath": "C:\\Program Files\\Projects\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
-=======
-              "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj": {
-                "projectPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Application\\FinanceTracker.Application.csproj"
-              },
-              "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj": {
-                "projectPath": "C:\\Users\\drago\\Desktop\\STL1111\\IO\\temaCasaa\\FinanceTracker\\src\\FinanceTracker.Domain\\FinanceTracker.Domain.csproj"
->>>>>>> main
               }
             }
           }
@@ -251,11 +190,28 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -267,16 +223,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-<<<<<<< HEAD
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
->>>>>>> main
         }
       }
     }

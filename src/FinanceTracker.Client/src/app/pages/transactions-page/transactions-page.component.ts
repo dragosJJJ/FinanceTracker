@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../../services/api.service';
+import { ApiService } from '../../services/api.service';
 import { CommonModule, NgFor } from '@angular/common';
 
 interface Transaction {
