@@ -3,18 +3,12 @@
     public class Category
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<Budget.Budget> Budgets { get; set; }
-        private ICollection<Transaction.Transaction> transactions;
-        public ICollection<Transaction.Transaction> Transactions { get => transactions; set => transactions = value; }
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public int UserId { get; set; } // Add this line
 
-        public static Category CreateCategoryForSeeding(int id, string name)
-        { 
-            return new Category
-            { 
-                Id = id,
-                Name = name
-            };
-        }
+        public void Create() { }
+        public void Edit() { }
+        public void Delete() { }
     }
 }

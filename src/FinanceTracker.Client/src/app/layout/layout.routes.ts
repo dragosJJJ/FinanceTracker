@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { DashboardPageComponent } from '../../../pages/dashboard-page/dashboard-page.component';
+import { DashboardPageComponent } from '..//pages/dashboard-page/dashboard-page.component';
 //import { LoginComponent } from './components/login/login.component';
 //import { RegisterComponent } from './components/register/register.component';
 //import { AuthGuard } from './guards/auth.guard';
@@ -13,5 +13,5 @@ export const routes: Routes = [
     // , canActivate: [AuthGuard] },
   { path: 'wallet', component: WalletComponent },
   { path: 'transactions', component: TransactionsComponent },
-  { path: 'categories', component: CategoriesComponent },
+  // { path: 'categories', component: CategoriesComponent },
 ];

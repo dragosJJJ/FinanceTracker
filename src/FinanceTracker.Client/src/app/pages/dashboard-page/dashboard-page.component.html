@@ -2,7 +2,42 @@
   <div class="header">
     <h1>Overview</h1>
   </div>
-  <div class="dashboard-container">  
+  <div class="dashboard-container"> 
+    <button type="button" class="add-button" (click)="onShowAddForm()">
+      <i class="uil uil-plus"></i>
+    </button>
       <category-card></category-card>
   </div>
+   <!-- Modal for Add Category Form -->
+ <div class="modal-overlay" *ngIf="showAddForm" (click)="onCancelAdd()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <form (ngSubmit)="onAddCategory()" #categoryForm="ngForm" class="add-category-form">
+      <h2>Add Category</h2>
+      <input
+        type="text"
+        name="title"
+        [(ngModel)]="newCategory.title"
+        placeholder="Title"
+        required
+        class="category-input"
+      />
+      <input
+        type="text"
+        name="description"
+        [(ngModel)]="newCategory.description"
+        placeholder="Description"
+        required
+        class="category-input"
+      />
+      <div class="modal-actions">
+        <button type="submit" [disabled]="categoryForm.invalid" class="form-button submit">
+          Submit
+        </button>
+        <button type="button" class="form-button cancel" (click)="onCancelAdd()">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
 </div>
