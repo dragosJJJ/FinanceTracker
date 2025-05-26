@@ -17,43 +17,12 @@ namespace FinanceTracker.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.4")
+                .HasAnnotation("ProductVersion", "9.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("FinanceTracker.Domain.Models.Budget.Budget", b =>
-                {
-                    b.Property<int>("BudgetId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("BudgetId"));
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Limit")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("Month")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Year")
-                        .HasColumnType("int");
-
-                    b.HasKey("BudgetId");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Budgets");
-                });
-
-            modelBuilder.Entity("FinanceTracker.Domain.Models.Category.Category", b =>
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Budget", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,90 +30,622 @@ namespace FinanceTracker.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Budgets");
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Card", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasMaxLength(4)
+                        .HasColumnType("nvarchar(4)");
+
+                    b.Property<string>("CurrencyLogo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cvv")
+                        .IsRequired()
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
+
+                    b.Property<DateTime>("Expiry")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Holder")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("ProviderLogo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Cards");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            Name = "Income"
+                            Amount = 27119m,
+                            Currency = "USD",
+                            CurrencyLogo = "USD.png",
+                            Cvv = "**5",
+                            Expiry = new DateTime(2035, 12, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Holder = "Test User",
+                            ProviderLogo = "citigroup.png",
+                            UserId = 1
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Expenses"
+                            Amount = 12102m,
+                            Currency = "GBP",
+                            CurrencyLogo = "GBP.png",
+                            Cvv = "**9",
+                            Expiry = new DateTime(2030, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Holder = "Test User",
+                            ProviderLogo = "master card.png",
+                            UserId = 1
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Investments"
+                            Amount = 7382m,
+                            Currency = "EURO",
+                            CurrencyLogo = "EURO.png",
+                            Cvv = "**2",
+                            Expiry = new DateTime(2026, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Holder = "Test User",
+                            ProviderLogo = "visa.png",
+                            UserId = 1
                         });
                 });
 
-            modelBuilder.Entity("FinanceTracker.Domain.Models.Transaction.Transaction", b =>
+            modelBuilder.Entity("FinanceTracker.Domain.Models.CardAmountHistory", b =>
                 {
-                    b.Property<int>("TransactionId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TransactionId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("CardId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CardId");
+
+                    b.ToTable("CardAmountHistory");
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Location")
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TransactionId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
-                    b.HasIndex("CategoryId");
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.PaymentMethod", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PaymentMethods");
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Transaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PaymentMethodId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TransactionKind")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PaymentMethodId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Transactions");
                 });
 
-            modelBuilder.Entity("FinanceTracker.Domain.Models.Budget.Budget", b =>
+            modelBuilder.Entity("FinanceTracker.Domain.Models.User", b =>
                 {
-                    b.HasOne("FinanceTracker.Domain.Models.Category.Category", "Category")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "975e63f4-b33a-476f-891d-5d25fb9f98a4",
+                            Email = "test@gmail.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "TEST@GMAIL.COM",
+                            NormalizedUserName = "TestUserName",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBT7A9gJyTBX9KJ0ahMwgIWbTTI5OMrDkB+h/mykB/grrfPu89KCsANpnjBH1AE5aw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "A1B2C3D4-E5F6-7890-1234-56789ABCDEF0",
+                            TwoFactorEnabled = false,
+                            UserName = "testUserName"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Budget", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.User", "User")
                         .WithMany("Budgets")
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
+                    b.OwnsOne("FinanceTracker.Domain.ValueObjects.Money", "Limit", b1 =>
+                        {
+                            b1.Property<int>("BudgetId")
+                                .HasColumnType("int");
+
+                            b1.HasKey("BudgetId");
+
+                            b1.ToTable("Budgets");
+
+                            b1.WithOwner()
+                                .HasForeignKey("BudgetId");
+                        });
+
+                    b.Navigation("Limit")
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
-            modelBuilder.Entity("FinanceTracker.Domain.Models.Transaction.Transaction", b =>
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Card", b =>
                 {
-                    b.HasOne("FinanceTracker.Domain.Models.Category.Category", "Category")
-                        .WithMany("Transactions")
-                        .HasForeignKey("CategoryId")
+                    b.HasOne("FinanceTracker.Domain.Models.User", null)
+                        .WithMany("Cards")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.CardAmountHistory", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.Card", "Card")
+                        .WithMany("AmountHistory")
+                        .HasForeignKey("CardId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
+                    b.Navigation("Card");
                 });
 
-            modelBuilder.Entity("FinanceTracker.Domain.Models.Category.Category", b =>
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Category", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.User", null)
+                        .WithMany("Categories")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.PaymentMethod", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.User", "User")
+                        .WithMany("PaymentMethods")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Transaction", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.PaymentMethod", "PaymentMethod")
+                        .WithMany()
+                        .HasForeignKey("PaymentMethodId");
+
+                    b.HasOne("FinanceTracker.Domain.Models.User", "User")
+                        .WithMany("Transactions")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.OwnsOne("FinanceTracker.Domain.ValueObjects.Money", "Amount", b1 =>
+                        {
+                            b1.Property<int>("TransactionId")
+                                .HasColumnType("int");
+
+                            b1.HasKey("TransactionId");
+
+                            b1.ToTable("Transactions");
+
+                            b1.WithOwner()
+                                .HasForeignKey("TransactionId");
+                        });
+
+                    b.OwnsOne("FinanceTracker.Domain.ValueObjects.Location", "Location", b1 =>
+                        {
+                            b1.Property<int>("TransactionId")
+                                .HasColumnType("int");
+
+                            b1.HasKey("TransactionId");
+
+                            b1.ToTable("Transactions");
+
+                            b1.WithOwner()
+                                .HasForeignKey("TransactionId");
+                        });
+
+                    b.Navigation("Amount")
+                        .IsRequired();
+
+                    b.Navigation("Location")
+                        .IsRequired();
+
+                    b.Navigation("PaymentMethod");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FinanceTracker.Domain.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
+                {
+                    b.HasOne("FinanceTracker.Domain.Models.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.Card", b =>
+                {
+                    b.Navigation("AmountHistory");
+                });
+
+            modelBuilder.Entity("FinanceTracker.Domain.Models.User", b =>
                 {
                     b.Navigation("Budgets");
+
+                    b.Navigation("Cards");
+
+                    b.Navigation("Categories");
+
+                    b.Navigation("PaymentMethods");
 
                     b.Navigation("Transactions");
                 });
